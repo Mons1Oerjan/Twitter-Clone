@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99ff68c8-30d4-431d-9495-65e89131f149" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/user_test.rb" afterPath="$PROJECT_DIR$/test/models/user_test.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -38,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/db/migrate/20170707024606_create_users.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -50,8 +48,8 @@
             <state relative-caret-position="210">
               <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
               <folding>
-                <marker date="1499400097000" expanded="true" signature="1061:1073" ph="do ... end" />
-                <marker date="1499400097000" expanded="true" signature="1061:1068" ph="do ... end" />
+                <marker date="1499401039000" expanded="true" signature="1061:1073" ph="do ... end" />
+                <marker date="1499401039000" expanded="true" signature="1061:1068" ph="do ... end" />
               </folding>
             </state>
           </provider>
@@ -60,8 +58,8 @@
       <file leaf-file-name="user.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+            <state relative-caret-position="510">
+              <caret line="34" column="79" lean-forward="true" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -71,7 +69,7 @@
         <entry file="file://$PROJECT_DIR$/db/migrate/20170707040055_add_password_digest_to_users.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/db/migrate/20170707034608_add_index_to_users_email.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -459,12 +457,12 @@
       <workItem from="1498442727802" duration="327000" />
       <workItem from="1498443231616" duration="1809000" />
       <workItem from="1498783566265" duration="10661000" />
-      <workItem from="1499395108853" duration="5213000" />
+      <workItem from="1499395108853" duration="5804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19353000" />
+    <option name="totallyTimeSpent" value="19944000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="840" height="1023" extended-state="0" />
@@ -824,7 +822,7 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20170707024606_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -834,8 +832,8 @@
         <state relative-caret-position="210">
           <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
           <folding>
-            <marker date="1499400097000" expanded="true" signature="1061:1073" ph="do ... end" />
-            <marker date="1499400097000" expanded="true" signature="1061:1068" ph="do ... end" />
+            <marker date="1499401039000" expanded="true" signature="1061:1073" ph="do ... end" />
+            <marker date="1499401039000" expanded="true" signature="1061:1068" ph="do ... end" />
           </folding>
         </state>
       </provider>
@@ -843,7 +841,7 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20170707034608_add_index_to_users_email.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -859,7 +857,7 @@
     <entry file="file://$PROJECT_DIR$/db/migrate/20170707040055_add_password_digest_to_users.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -882,8 +880,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+        <state relative-caret-position="510">
+          <caret line="34" column="79" lean-forward="true" selection-start-line="34" selection-start-column="79" selection-end-line="34" selection-end-column="79" />
           <folding />
         </state>
       </provider>

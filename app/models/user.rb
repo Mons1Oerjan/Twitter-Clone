@@ -31,5 +31,7 @@ class User < ApplicationRecord
 
   # Uses bcrypt to hash the user's password. This ensures that an attacker won't
   # be able to log in to the site even if they manage to obtain a copy of the DB.
+  # By default, bcrypt produces a "salted hash", which protects against two
+  # important classes of attacks: Dictionary attacks and Rainbow Table Attacks.
   has_secure_password
 end
