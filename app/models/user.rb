@@ -17,10 +17,17 @@ class User < ApplicationRecord
   # i                  case-insensitive
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
 
-  validates :name,  presence: true, length: { maximum: 50 }
-  validates :email, presence: true, length: { maximum: 255 },
+  validates :name,
+            presence: true,
+            length: { maximum: 50 }
+  validates :email,
+            presence: true,
+            length: { maximum: 255 },
             format: { with: VALID_EMAIL_REGEX },
             uniqueness: { case_sensitive: false }
+  validates :password,
+            presence: true,
+            length: { minimum: 6 }
 
   # Uses bcrypt to hash the user's password. This ensures that an attacker won't
   # be able to log in to the site even if they manage to obtain a copy of the DB.
