@@ -22,5 +22,7 @@ class User < ApplicationRecord
             format: { with: VALID_EMAIL_REGEX },
             uniqueness: { case_sensitive: false }
 
-
+  # Uses bcrypt to hash the user's password. This ensures that an attacker won't
+  # be able to log in to the site even if they manage to obtain a copy of the DB.
+  has_secure_password
 end
