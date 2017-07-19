@@ -19,19 +19,38 @@ class User < ApplicationRecord
 
   validates :name,
             presence: true,
-            length: { maximum: 50 }
+            length: {
+                maximum: 50
+            }
   validates :email,
             presence: true,
-            length: { maximum: 255 },
-            format: { with: VALID_EMAIL_REGEX },
-            uniqueness: { case_sensitive: false }
+            length: {
+                maximum: 255
+            },
+            format: {
+                with: VALID_EMAIL_REGEX
+            },
+            uniqueness: {
+                case_sensitive: false
+            }
   validates :password,
             presence: true,
-            length: { minimum: 6 }
+            length: {
+                minimum: 6
+            }
 
   # Uses bcrypt to hash the user's password. This ensures that an attacker won't
   # be able to log in to the site even if they manage to obtain a copy of the DB.
   # By default, bcrypt produces a "salted hash", which protects against two
   # important classes of attacks: Dictionary attacks and Rainbow Table Attacks.
   has_secure_password
+
+  # Returns the hash digest of the given string
+  def User.digest(string)
+    cost = ActiveModel::SecurePassword.min_cost ?
+               BCrypt::Engine::MIN_COST :
+               BCrypt::Engine.cost
+    BCrypt::Password.create(string, cost: cost)
+  end
+
 end
