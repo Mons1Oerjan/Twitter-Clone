@@ -22,7 +22,7 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
     assert flash.empty?                # verify that the flash message doesn't appear on the new page
   end
 
-  test 'login with valid information' do
+  test 'login with valid information followed by logout' do
     get login_path
     post login_path, params: {
         session: {
@@ -30,12 +30,22 @@ class UsersLoginTest < ActionDispatch::IntegrationTest
             password: 'password'
         }
     }
+    assert is_logged_in?
     assert_redirected_to @user                 # check for the right redirect target
     follow_redirect!                           # visit the target page
     assert_template 'users/show'
     assert_select @href, login_path, count: 0  # verify that the login link disappears
     assert_select @href, logout_path
     assert_select @href, user_path(@user)
+
+    # log out:
+    delete logout_path
+    assert_not is_logged_in?
+    assert_redirected_to root_url
+    follow_redirect!
+    assert_select @href, login_path
+    assert_select @href, logout_path, count: 0
+    assert_select @href, user_path(@user), count: 0
   end
 
 end
