@@ -42,7 +42,8 @@ class User < ApplicationRecord
             presence: true,
             length: {
                 minimum: 6
-            }
+            },
+            allow_nil: true   # Note: has_secure_password still catches nil passwords
 
   # Uses bcrypt to hash the user's password. This ensures that an attacker won't
   # be able to log in to the site even if they manage to obtain a copy of the DB.
@@ -59,7 +60,7 @@ class User < ApplicationRecord
       BCrypt::Password.create(string, cost: cost)
     end
 
-    # Returns a random base64 token (64^22 possibilities)
+    # Returns a new random token in base64  (64^22 possibilities)
     def new_token
       SecureRandom.urlsafe_base64
     end
